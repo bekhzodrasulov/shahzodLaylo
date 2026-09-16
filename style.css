@@ -1,0 +1,317 @@
+@font-face {
+    font-family: "Libertinus Serif";
+    src: url("LibertinusSerif-BoldItalic.woff2") format("woff2"),
+        url("LibertinusSerif-BoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Libertinus Serif";
+    src: url("LibertinusSerif-Bold.woff2") format("woff2"),
+        url("LibertinusSerif-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Libertinus Serif";
+    src: url("LibertinusSerif-Italic.woff2") format("woff2"),
+        url("LibertinusSerif-Italic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Libertinus Serif";
+    src: url("LibertinusSerif-SemiBold.woff2") format("woff2"),
+        url("LibertinusSerif-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Libertinus Serif";
+    src: url("LibertinusSerif-Regular.woff2") format("woff2"),
+        url("LibertinusSerif-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Libertinus Serif";
+    src: url("LibertinusSerif-SemiBoldItalic.woff2") format("woff2"),
+        url("LibertinusSerif-SemiBoldItalic.woff") format("woff");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    background: #ffffff;
+    font-family: "Libertinus Serif", serif;
+    color: #0f2441;
+}
+
+/* === PAGE SECTIONS === */
+.page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* === PAGE 1 === */
+.hero-photo {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 40px;
+}
+
+.save-date {
+    font-family: "Great Vibes", cursive;
+    font-style: italic;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #0f2441;
+    margin: 10px 0 20px;
+}
+
+.names a {
+    font-size: 24px;
+    letter-spacing: 6px;
+    color: #0f2441;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.date {
+    font-family: "Great Vibes", cursive;
+    margin-top: 30px;
+    font-size: 28px;
+    letter-spacing: 4px;
+    color: #0f2441;
+}
+
+.calendar p {
+    font-family: "Great Vibes", cursive;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.calendar table {
+    border-collapse: separate;
+    border-spacing: 10px 10px;
+    /* горизонталь, вертикаль */
+    margin: 0 auto;
+    font-size: 14px;
+    text-align: center;
+}
+
+.calendar th,
+.calendar td {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.highlight {
+    position: relative;
+    font-weight: bold;
+}
+
+.highlight::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 35px;
+    transform: translate(-50%, -50%);
+    border: 1.5px solid red;
+    border-radius: 50%;
+}
+
+/* === PAGE 2 === */
+.names2 {
+    font-family: "Libertinus Serif";
+    font-style: italic;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: #0f2441;
+    line-height: 1.2;
+}
+
+.names2 span {
+    font-family: "Great Vibes", cursive;
+    font-size: 40px;
+    color: #0f2441;
+}
+
+.invite-text {
+    font-family: "Great Vibes", cursive;
+    margin-top: 25px;
+    font-size: 40px;
+    line-height: 1.6;
+    font-weight: 500;
+    color: #0f2441;
+}
+
+.date2 {
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 35px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #0f2441;
+}
+
+.address {
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 5px;
+    font-size: 26px;
+    color: #0f2441;
+}
+
+.follow {
+    margin-top: 50px;
+    font-family: "Great Vibes", cursive;
+    font-size: 38px;
+    color: #0f2441;
+}
+
+.countdown-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding-top: 8px;
+}
+
+.countdown {
+    display: flex;
+    gap: 30px;
+}
+
+.countdown div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countdown span {
+    font-size: 30px;
+    font-weight: 600;
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+}
+
+.countdown p {
+    font-family: "Great Vibes", cursive;
+    margin-top: 10px;
+    font-size: 28px;
+}
+
+.btn-location {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 28px;
+    border: 2px solid #0f2441;
+    border-radius: 16px;
+    text-decoration: none;
+    color: #0f2441;
+    padding: 3px 16px;
+}
+
+.btn-location:hover {
+    background-color: #fff;
+    color: #0f2441;
+}
+
+.location-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.last {
+    font-family: "Great Vibes", cursive;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: #0f2441;
+    line-height: 1.2;
+}
+
+.contacts {
+    /* font-family: "Libertinus Serif", serif; */
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #0f2441;
+    line-height: 1.2;
+}
+
+.line {
+    text-align: center;
+    width: 200px;
+    height: 1px;
+    background-color: #0f2441;
+    color: #0f2441;
+}
+
+/* Базовый класс для скрытых элементов */
+.animate {
+    opacity: 0;
+    transition: opacity 2s ease, transform 2s ease;
+    will-change: opacity, transform;
+}
+
+/* Картинки: слева направо */
+.slide-left {
+    transform: translateX(-50px);
+}
+
+.slide-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Картинки: справа налево */
+.slide-right {
+    transform: translateX(50px);
+}
+
+.slide-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Текст: снизу вверх */
+.fade-up {
+    transform: translateY(40px);
+}
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Текст: сверху вниз */
+.fade-down {
+    transform: translateY(-40px);
+}
+
+.fade-down.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
