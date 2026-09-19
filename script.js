@@ -27,7 +27,7 @@ elements.forEach(el => observer.observe(el));
 
 // === Countdown timer ===
 function updateCountdown() {
-    const weddingDate = new Date("2026-10-01T17:00:00");
+    const weddingDate = new Date("2026-10-01T12:00:00");
     const now = new Date();
     const diff = weddingDate - now;
 
